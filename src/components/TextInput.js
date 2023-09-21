@@ -1,9 +1,9 @@
 import React from 'react'
 
-const TextInput = () => {
+const TextInput = ({value, onChange}  ) => {
   return (
     <div>
-      <input style={{width: "100%"}} type='text'/>
+      <input style={{width: "100%"}} value={value} type='text' onChange={onChange} />
     </div>
   )
 }

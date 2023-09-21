@@ -4,13 +4,15 @@
   align-items: center;
   height: 100vh;
   flex-direction: column;
-  /* color: white; */
+  color: white;
+  background-color: #282c34; 
 
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+
 
 }
 
