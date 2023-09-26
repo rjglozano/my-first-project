@@ -35,7 +35,6 @@ function App() {
 
   const handleSubmit = (event) => {
       event.preventDefault();
-      console.log(form)
       setData([...data, {id: data.length + 1, name: form.nameItem, price: form.priceItem, stock: form.stockItem}])
       
   };
