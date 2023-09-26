@@ -9,11 +9,13 @@ const Items = (props) => {
       .filter(item => item.name.toLowerCase()
       .includes(props.query.toLowerCase())).map(item => (
             <tr key={item.id} onClick={()=> alert(`Clicked: ${item.name} - ${item.price}`)}>
-                <td>{item.id}</td>
-                <td>{item.name}</td>
-                <td>{props.includePrice && item.price}</td>
+                {/* <td>{item.id}</td> */}
+                <td >{item.name}</td>
+                <td style={{textAlign:'right'}}>${item.price}</td>
+                <td style={{textAlign:'center'}}>{item.stock}</td>
             </tr>
       ))}
+
     </>
   )
 }
